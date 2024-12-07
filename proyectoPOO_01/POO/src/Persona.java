@@ -16,6 +16,6 @@ public class Persona {
     //public String enviaSaludo
 
     public void ImprimirInformacion(){
-        System.out.println(nombreCompleto()+" con "+edad);
+        System.out.println(nombreCompleto()+" - "+edad);
     }
 }
