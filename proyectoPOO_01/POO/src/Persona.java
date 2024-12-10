@@ -1,10 +1,10 @@
 public class Persona {
     
     //Atributos Caracteristicas de objeto
-    String nombre;
-    String apellido;
-    int edad;
-    Carrera carrera;
+    private String nombre;
+    private String apellido;
+    private int edad;
+    private Carrera carrera;
 
     //Constructor SOLO NOMBRE CARRERA
     public Persona (String nombre, String apellido, int edad, String nombreCarrera){
@@ -23,8 +23,41 @@ public class Persona {
     
     //Metodos comportamiento del obejto
 
+    public String getNombre() {
+        return nombre.toUpperCase();
+    }
+    
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido.toUpperCase();
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public Carrera getCarrera() {
+        return carrera;
+    }
+
+    public void setCarrera(Carrera carrera) {
+        this.carrera = carrera;
+    }
+
+    
     public String nombreCompleto(){
-        return nombre+" "+apellido; 
+        return getNombre()+" "+getApellido(); 
     }
 
     //public String enviaSaludo
@@ -33,12 +66,12 @@ public class Persona {
         String estuddiandoSIoNO;
         if(carrera.Estudiando){
             estuddiandoSIoNO = "si";
-            System.out.println(nombreCompleto()+" de "+edad+" años, "+estuddiandoSIoNO+
+            System.out.println(nombreCompleto()+" de "+getEdad()+" años, "+estuddiandoSIoNO+
             " esta estudiando"+
             carrera.nombreCarrera+" de "+carrera.duracion+" años totales");
         } else {
             estuddiandoSIoNO = "no";
-            System.out.println(nombreCompleto()+" de "+edad+" años, "+estuddiandoSIoNO+
+            System.out.println(nombreCompleto()+" de "+getEdad()+" años, "+estuddiandoSIoNO+
             " esta estudiando"+carrera.nombreCarrera+", ya que culminó sus "+carrera.duracion+
             " años de duracion");
         }
