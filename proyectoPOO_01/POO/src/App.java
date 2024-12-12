@@ -11,7 +11,7 @@ public class App {
         Imprimir(AnimalGenerico.toString());
     }
 
-    public static void  Imprimir(String frase){
+    public static void Imprimir(String frase){
         System.out.println(frase);
     }
 }
