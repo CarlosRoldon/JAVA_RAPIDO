@@ -2,14 +2,14 @@ public class Animal {
     private String nombre;
     private int cantidadPatas;
     private int edad;
+    private static int contadorAnimales = 0;
 
     public Animal(String nombre, int cantidadPatas, int edad) {
         this.nombre = nombre;
         this.cantidadPatas = cantidadPatas;
         this.edad = edad;
+        contadorAnimales++;
     }
-
-    
 
     public String getNombre() {
         return nombre;
@@ -49,6 +49,10 @@ public class Animal {
 
     public String hacerSonido() {
         return "Haciendo sonido Generico de Animal";
+    }
+
+    public static int getContadorAniamles(){
+        return contadorAnimales;
     }
 
     @Override

@@ -9,6 +9,7 @@ public class App {
         Imprimir(gatoPeludo.rascarEspalda());
         Imprimir(perroBlanco.traerPelota());
         Imprimir(AnimalGenerico.toString());
+        Imprimir("Hay "+Animal.getContadorAniamles()+" animales que Spawnearon");
     }
 
     public static void Imprimir(String frase){
