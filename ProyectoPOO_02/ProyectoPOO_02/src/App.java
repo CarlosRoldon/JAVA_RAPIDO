@@ -1,7 +1,6 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hola mundo!");
-        Circulo circulo = new Circulo(55);
+        Circulo circulo = new Circulo(10);
         Rectangulo rectangulo = new Rectangulo(10, 5);
         circulo.ImprimirInfo();
         //System.out.println("El area del Circulo es de: "+circulo.calcularArea());
