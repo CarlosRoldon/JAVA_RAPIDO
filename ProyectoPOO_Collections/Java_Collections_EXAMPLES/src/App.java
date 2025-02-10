@@ -1,11 +1,12 @@
-import java.util.HashSet;
-import java.util.Set;
+import java.util.LinkedList;
+import java.util.List;
+//import java.util.ArrayList;
 
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Bienvenidos a la farra de heroes!");
 
-        Set<String> heroesLista = new HashSet<>();
+        List<String> heroesLista = new LinkedList<>();
         heroesLista.add("Batman");
         heroesLista.add("Superman");
         heroesLista.add("Hulk");
@@ -23,12 +24,10 @@ public class App {
             System.out.println("Hulk se fue en uber");
         }
 
-        //heroesLista.removeAll(heroesLista);
+        System.out.println("Lista de Heroes \n");
 
-        if(heroesLista.isEmpty()){
-            System.out.println("La lista esta vacia, La fiesta acabó");
-        } else{
-            System.out.println("Aun hay "+heroesLista.size()+" Heroes Reunidos");
+        for (String heroe : heroesLista) {
+            System.out.println(heroe);
         }
 
     }
