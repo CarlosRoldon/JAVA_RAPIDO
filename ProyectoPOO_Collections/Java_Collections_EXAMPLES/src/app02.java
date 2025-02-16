@@ -1,7 +1,5 @@
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.TreeMap;
 
 public class app02 {
     public static void main(String[] args) {
